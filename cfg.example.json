@@ -15,6 +15,6 @@
         "timeout": 1000
     },
     "ignore": {
-        "cpu.busy": true,
+        "cpu.busy": true
     }
 }
