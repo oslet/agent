@@ -30,4 +30,8 @@ C:\workspace\src\github.com\LeonZYang\agent\falcon-agent.exe -c C:\workspace\src
 - agent不提供插件、http和缓存功能
 - 目前监控项只有alive,cpu,disk,mem,net,load
 - 编译环境需要go-1.5
-- 网卡名称不支持中文(上报Transfer后数据无法显示，具体原因没细查)
+  go 1.5有一个bug，修改src/net/interface_windows.go,大概在第50行，修改完重新编译go即可
+  - return iia[:iilen-1], nil
+  + return iia[:iilen], nil
+- 网卡名称不支持中文(上报Transfer后数据无法显示，具体原因没细查，好像可以修改graph表字符集为utf-8)
+
