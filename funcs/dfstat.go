@@ -2,9 +2,10 @@ package funcs
 
 import (
 	"fmt"
-	"github.com/LeonZYang/agent/tools/disk"
-	"github.com/open-falcon/common/model"
 	"log"
+
+	"github.com/open-falcon/common/model"
+	"github.com/oslet/agent/tools/disk"
 )
 
 func DeviceMetrics() (L []*model.MetricValue) {

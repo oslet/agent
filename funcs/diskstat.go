@@ -1,9 +1,10 @@
 package funcs
 
 import (
-	"github.com/LeonZYang/agent/tools/disk"
-	"github.com/open-falcon/common/model"
 	"log"
+
+	"github.com/open-falcon/common/model"
+	"github.com/oslet/agent/tools/disk"
 )
 
 func DiskIOMetrics() (L []*model.MetricValue) {

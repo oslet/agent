@@ -1,8 +1,8 @@
 package funcs
 
 import (
-	"github.com/LeonZYang/agent/g"
 	"github.com/open-falcon/common/model"
+	"github.com/oslet/agent/g"
 )
 
 type FuncsAndInterval struct {

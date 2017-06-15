@@ -1,12 +1,13 @@
 package cron
 
 import (
-	"github.com/LeonZYang/agent/g"
-	"github.com/open-falcon/common/model"
 	"log"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/open-falcon/common/model"
+	"github.com/oslet/agent/g"
 )
 
 func SyncBuiltinMetrics() {

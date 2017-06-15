@@ -1,9 +1,10 @@
 package funcs
 
 import (
-	"github.com/LeonZYang/agent/tools/cpu"
-	"github.com/open-falcon/common/model"
 	"sync"
+
+	"github.com/open-falcon/common/model"
+	"github.com/oslet/agent/tools/cpu"
 )
 
 const (

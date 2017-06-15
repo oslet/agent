@@ -6,9 +6,9 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/LeonZYang/agent/tools/wmi"
+	"github.com/oslet/agent/tools/wmi"
 
-	"github.com/LeonZYang/agent/tools/internal/common"
+	"github.com/oslet/agent/tools/internal/common"
 )
 
 type Win32_Processor struct {

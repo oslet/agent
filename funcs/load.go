@@ -1,9 +1,10 @@
 package funcs
 
 import (
-	"github.com/LeonZYang/agent/tools/load"
-	"github.com/open-falcon/common/model"
 	"log"
+
+	"github.com/open-falcon/common/model"
+	"github.com/oslet/agent/tools/load"
 )
 
 func LoadMetrics() (L []*model.MetricValue) {

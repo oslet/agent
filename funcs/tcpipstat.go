@@ -3,8 +3,8 @@ package funcs
 import (
 	"log"
 
-	"github.com/LeonZYang/agent/tools/tcpip"
 	"github.com/open-falcon/common/model"
+	"github.com/oslet/agent/tools/tcpip"
 )
 
 func TcpipMetrics() (L []*model.MetricValue) {

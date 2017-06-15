@@ -1,10 +1,11 @@
 package cron
 
 import (
-	"github.com/LeonZYang/agent/funcs"
-	"github.com/LeonZYang/agent/g"
-	"github.com/open-falcon/common/model"
 	"time"
+
+	"github.com/open-falcon/common/model"
+	"github.com/oslet/agent/funcs"
+	"github.com/oslet/agent/g"
 )
 
 func InitDataHistory() {

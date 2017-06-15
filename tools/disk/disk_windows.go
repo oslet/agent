@@ -7,9 +7,9 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/LeonZYang/agent/tools/wmi"
+	"github.com/oslet/agent/tools/wmi"
 
-	"github.com/LeonZYang/agent/tools/internal/common"
+	"github.com/oslet/agent/tools/internal/common"
 )
 
 var (

@@ -2,11 +2,33 @@ package g
 
 import (
 	"encoding/json"
-	"github.com/toolkits/file"
 	"log"
 	"os"
 	"sync"
+
+	"github.com/toolkits/file"
 )
+
+type MsSQLConfig struct {
+	Enabled  bool     `json:"enabled"`
+	Addr     string   `json:"addr"`
+	Port     int      `json:"port"`
+	Username string   `json:"username"`
+	Password string   `json:"password"`
+	Encrypt  string   `json:"encrypt"`
+	Instance []string `json:"instance"`
+}
+
+type IIsConfig struct {
+	Enabled  bool     `json:"enabled"`
+	Websites []string `json:"websites"`
+}
+
+type HttpConfig struct {
+	Enabled  bool   `json:"enabled"`
+	Listen   string `json:"listen"`
+	Backdoor bool   `json:"backdoor"`
+}
 
 type PluginConfig struct {
 	Enabled bool   `json:"enabled"`
@@ -35,6 +57,9 @@ type GlobalConfig struct {
 	Debug         bool             `json:"debug"`
 	Hostname      string           `json:"hostname"`
 	IP            string           `json:"ip"`
+	IIs           *IIsConfig       `json:"iis"`
+	MsSQL         *MsSQLConfig     `json:"mssql"`
+	Http          *HttpConfig      `json:"http"`
 	Heartbeat     *HeartbeatConfig `json:"heartbeat"`
 	Transfer      *TransferConfig  `json:"transfer"`
 	IgnoreMetrics map[string]bool  `json:"ignore"`

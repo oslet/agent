@@ -1,9 +1,10 @@
 package funcs
 
 import (
-	"github.com/LeonZYang/agent/tools/mem"
-	"github.com/open-falcon/common/model"
 	"log"
+
+	"github.com/open-falcon/common/model"
+	"github.com/oslet/agent/tools/mem"
 )
 
 func MemMetrics() []*model.MetricValue {
