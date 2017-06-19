@@ -25,6 +25,7 @@ func BuildMappers() {
 				LoadMetrics,
 				MemMetrics,
 				TcpipMetrics,
+				SocketMetrics,
 			},
 			Interval: interval,
 		},
