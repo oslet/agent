@@ -5,9 +5,9 @@ import (
 )
 
 type LoadAvgStat struct {
-	Load1  float64 `json:"load1"`
-	Load5  float64 `json:"load5"`
-	Load15 float64 `json:"load15"`
+	Load1min  float64 `json:"load1min"`
+	Load5min  float64 `json:"load5min"`
+	Load15min float64 `json:"load15min"`
 }
 
 func (l LoadAvgStat) String() string {

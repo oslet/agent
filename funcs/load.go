@@ -15,9 +15,9 @@ func LoadMetrics() (L []*model.MetricValue) {
 		return nil
 	}
 
-	L = append(L, CounterValue("load.load1", loadVal.Load1))
-	L = append(L, CounterValue("load.load5", loadVal.Load5))
-	L = append(L, CounterValue("load.load15", loadVal.Load15))
+	L = append(L, CounterValue("load.load1min", loadVal.Load1min))
+	L = append(L, CounterValue("load.load5min", loadVal.Load5min))
+	L = append(L, CounterValue("load.load15min", loadVal.Load15min))
 
 	return
 }

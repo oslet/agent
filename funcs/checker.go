@@ -19,6 +19,8 @@ func CheckCollector() {
 	output["disk.io "] = len(DiskIOMetrics()) > 0
 	output["memory  "] = len(MemMetrics()) > 0
 	output["tcpip   "] = len(TcpipMetrics()) > 0
+	output["proc    "] = len(ProcessMetrics()) > 0
+	output["handle  "] = len(HandleCountMetrics()) > 0
 
 	for k, v := range output {
 		status := "fail"
